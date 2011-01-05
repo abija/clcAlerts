@@ -1,0 +1,12 @@
+## Interface: 30300
+## Title: Big Wigs [|cffeda55fCLCAlerts|r]
+## Notes: Alerts module for BigWigs
+## Dependencies: BigWigs, BigWigs_Core, BigWigs_Plugins
+
+core.lua
+Citadel\modules.xml
+Northrend\modules.xml
+Bastion\modules.xml
+Blackwing\modules.xml
+Throne\modules.xml
+
