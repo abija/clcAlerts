@@ -6,7 +6,7 @@
 local mod = BigWigs:NewBoss("Ascendant Council CLC", "The Bastion of Twilight")
 if not mod then return end
 mod:RegisterEnableMob(43686, 43687, 43688, 43689) --Ignacious, Feludius, Arion, Terrastra
-mod.toggleOptions = {83099, 82665, 82660}
+mod.toggleOptions = {83099, 82665, 82660, 83718, 82752}
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -19,6 +19,8 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_APPLIED", "LightningRodApplied",83099)
 	self:Log("SPELL_CAST_SUCCESS", "HeartofIce", 82665)
 	self:Log("SPELL_CAST_SUCCESS", "BurningBlood", 82660)
+	self:Log("SPELL_CAST_START", "HardenSkin", 83718, 92541, 92542, 92543)
+	self:Log("SPELL_CAST_START", "HydroLance", 82752)
 end
 
 
@@ -28,6 +30,14 @@ end
 --------------------------------------------------------------------------------
 -- Event Handlers
 --
+function mod:HardenSkin(player, spellId, _, _, spellName)
+	self:FlashSpell(83718, "_die")
+end
+
+function mod:HydroLance(player, spellId, _, _, spellName)
+	self:FlashSpell(82752, "_die")
+end
+
 function mod:LightningRodApplied(player, spellId, _, _, spellName)
 	if UnitIsUnit(player, "player") then
 		self:FlashSpell(83099, "_run")
