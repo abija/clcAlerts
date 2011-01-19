@@ -24,16 +24,16 @@ local frameSize = 200
 -- sounds
 --------------------------------------------------------------------------------
 local sounds = {
-	_default = [[Sound\Doodad\BellTollAlliance.wav]],
-	_run = [[Sound\Creature\HoodWolf\HoodWolfTransformPlayer01.wav]],
-	_explosion = [[Sound\Doodad\Hellfire_Raid_FX_Explosion05.wav]],
-	_die = [[Sound\Creature\CThun\CThunYouWillDIe.wav]],
-	_cheer = [[Sound\Event Sounds\OgreEventCheerUnique.wav]],
+	_default = "Sound\\Doodad\\BellTollAlliance.wav",
+	_run = "Sound\\Creature\\HoodWolf\\HoodWolfTransformPlayer01.wav",
+	_explosion = "Sound\\Doodad\\Hellfire_Raid_FX_Explosion05.wav",
+	_die = "Sound\\Creature\\CThun\\CThunYouWillDIe.wav",
 }
 
-local function PlaySound(s)
+-- /run _G.PlaySoundFile("Sound\\Creature\\CThun\\CThunYouWillDIe.wav")
+
+local function XPlaySound(s)
 	if sounds[s] then
-		-- print("test")
 		PlaySoundFile(sounds[s])
 	else
 		PlaySoundFile(sounds._default)
@@ -110,15 +110,15 @@ animFrame.tex:SetAllPoints()
 
 -- ops
 --------------------------------------------------------------------------------
-function boss:PlaySound(key, sound)
+function boss:XPlaySound(key, sound)
 	if self.db.profile[GetSpellInfo(key)] and (self.db.profile[GetSpellInfo(key)] == 0) then return end
-	PlaySound(sound)
+	XPlaySound(sound)
 end
 
 function boss:FlashSpell(spellId, sound)
 	if self.db.profile[GetSpellInfo(spellId)] and (self.db.profile[GetSpellInfo(spellId)] == 0) then return end
 	local _, _, icon = GetSpellInfo(spellId)
-	PlaySound(sound)
+	XPlaySound(sound)
 	AnimStart(icon)
 end
 
