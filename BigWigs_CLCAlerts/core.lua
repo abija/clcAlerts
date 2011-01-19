@@ -33,7 +33,7 @@ local sounds = {
 
 local function PlaySound(s)
 	if sounds[s] then
-		print("test")
+		-- print("test")
 		PlaySoundFile(sounds[s])
 	else
 		PlaySoundFile(sounds._default)
