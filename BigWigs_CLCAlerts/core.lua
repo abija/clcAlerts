@@ -28,15 +28,14 @@ local sounds = {
 	_run = "Sound\\Creature\\HoodWolf\\HoodWolfTransformPlayer01.wav",
 	_explosion = "Sound\\Doodad\\Hellfire_Raid_FX_Explosion05.wav",
 	_die = "Sound\\Creature\\CThun\\CThunYouWillDIe.wav",
+	_ding = "Interface\\AddOns\\BigWigs\\Sounds\\Alert.mp3"
 }
 
--- /run _G.PlaySoundFile("Sound\\Creature\\CThun\\CThunYouWillDIe.wav")
+-- /run PlaySoundFile("Sound\\Creature\\CThun\\CThunYouWillDIe.wav", "Master")
 
 local function XPlaySound(s)
 	if sounds[s] then
-		PlaySoundFile(sounds[s])
-	else
-		PlaySoundFile(sounds._default)
+		PlaySoundFile(sounds[s], "Master")
 	end
 end
 --------------------------------------------------------------------------------
