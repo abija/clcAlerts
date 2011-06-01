@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod = BigWigs:NewBoss("Chimaeron CLC", "Blackwing Descent")
+local mod = BigWigs:NewBoss("Chimaeron CLC", 754)
 if not mod then return end
 mod:RegisterEnableMob(43296, 44418, 44202) -- Chimaeron, Bile-O-Tron 800, Finkle Einhorn
 mod.toggleOptions = {88853}

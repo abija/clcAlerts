@@ -4,7 +4,7 @@ if true then return end
 --
 
 
-local mod = BigWigs:NewBoss("Sinestra", "The Bastion of Twilight")
+local mod = BigWigs:NewBoss("Sinestra", 758)
 if not mod then return end
 mod:RegisterEnableMob()
 mod.toggleOptions = {"bosskill"}

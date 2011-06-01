@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod = BigWigs:NewBoss("Conclave of Wind CLC", "Throne of the Four Winds")
+local mod = BigWigs:NewBoss("Conclave of Wind CLC", 773)
 if not mod then return end
 mod:RegisterEnableMob(45870, 45871, 45872) -- Anshal, Nezir, Rohash
 mod.toggleOptions = {95865, 86193}

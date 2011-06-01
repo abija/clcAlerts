@@ -3,7 +3,7 @@
 --
 
 
-local mod = BigWigs:NewBoss("Cho'gall CLC", "The Bastion of Twilight")
+local mod = BigWigs:NewBoss("Cho'gall CLC", 758)
 if not mod then return end
 mod:RegisterEnableMob(43324)
 mod.toggleOptions = {81171}

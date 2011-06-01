@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod = BigWigs:NewBoss("Omnotron Defense System CLC", "Blackwing Descent")
+local mod = BigWigs:NewBoss("Omnotron Defense System CLC", 754)
 if not mod then return end
 mod:RegisterEnableMob(42166, 42179, 42178, 42180) -- Arcanotron, Electron, Magmatron, Toxitron
 mod.toggleOptions = {79501, 80094, 79888, 91849, 92048, 92023}

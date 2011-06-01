@@ -3,7 +3,7 @@
 --
 
 
-local mod = BigWigs:NewBoss("Ascendant Council CLC", "The Bastion of Twilight")
+local mod = BigWigs:NewBoss("Ascendant Council CLC", 758)
 if not mod then return end
 mod:RegisterEnableMob(43686, 43687, 43688, 43689) --Ignacious, Feludius, Arion, Terrastra
 mod.toggleOptions = {83099, 82665, 82660, 83718, 82752}

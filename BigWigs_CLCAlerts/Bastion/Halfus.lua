@@ -3,7 +3,7 @@
 --
 
 
-local mod = BigWigs:NewBoss("Halfus Wyrmbreaker CLC", "The Bastion of Twilight")
+local mod = BigWigs:NewBoss("Halfus Wyrmbreaker CLC", 758)
 if not mod then return end
 mod:RegisterEnableMob(44600)
 mod.toggleOptions = {86169}

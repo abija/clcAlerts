@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod = BigWigs:NewBoss("Nefarian CLC", "Blackwing Descent")
+local mod = BigWigs:NewBoss("Nefarian CLC", 754)
 if not mod then return end
 mod:RegisterEnableMob(41270, 41376)
 mod.toggleOptions = {79339, 94130, 94090}

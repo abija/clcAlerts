@@ -2,7 +2,7 @@
 -- Module Declaration
 --
 
-local mod = BigWigs:NewBoss("Valiona and Theralion CLC", "The Bastion of Twilight")
+local mod = BigWigs:NewBoss("Valiona and Theralion CLC", 758)
 if not mod then return end
 mod:RegisterEnableMob(45992, 45993)
 mod.toggleOptions = {86622}
