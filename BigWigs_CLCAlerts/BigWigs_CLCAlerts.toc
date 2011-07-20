@@ -9,4 +9,5 @@ Northrend\modules.xml
 Bastion\modules.xml
 Blackwing\modules.xml
 Throne\modules.xml
+Firelands\modules.xml
 
